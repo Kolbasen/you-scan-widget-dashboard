@@ -1,0 +1,35 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node build/server.js",
+    "start:dev": "nodemon --watch src --ext ts --exec \"npx tsx src/server.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@fastify/type-provider-typebox": "^6.1.0",
+    "fastify": "^5.6.1",
+    "fastify-plugin": "^5.1.0",
+    "sqlite3": "^5.1.7",
+    "typebox": "^1.0.43"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "@types/node": "^24.9.1",
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
+    "jiti": "^2.6.1",
+    "nodemon": "^3.1.10",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  }
+}
